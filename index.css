@@ -1,0 +1,126 @@
+.custom-btn{
+    background: #FFC107;
+    color: #100F0F;
+    width: 160px;
+    padding: 15px 0;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-family: 'Poppins',sans-serif;
+}
+.nav-brand h3{
+    font-weight: bold;
+}
+input:focus{
+    outline: none;
+}
+.nav-navbar{
+    height: 64px;
+    padding: 14px 0;
+}
+.hero-banner{
+    background: url(./images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 650px;
+    color: white;
+    text-align: center;
+}
+.custom-h1{
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+}
+.custom-input-filed {
+    width: 100%;
+    height: 54px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 8px;
+}
+input[type="text"]:focus{
+  border-width: 0;
+  border-color: white;
+}
+.custom-h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+.foods-section{
+    padding: 50px 0;
+}
+.food-item h3{
+    font-size: 25px;
+    line-height: auto;
+    color: #403F3F;
+    font-weight: bold;
+}
+.food-item p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #706F6F;
+}
+.food-item button{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #FFC107;
+    text-decoration: none;
+}
+
+.footer-head h4{
+    font-size: 25px;
+    color: #403F3F;
+    font-weight: bold;
+}
+.footer-head p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    color: #403F3F;
+}
+.footer-head p span{
+    font-size: 18px;
+    color: #706F6F;
+    line-height: 30px;
+}
+
+@media(min-width:768px){
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 48%;
+    }
+}
+.item{
+    display: none;
+}
+.item:nth-child(1){
+    display: block;
+}
+.item:nth-child(2){
+    display: block;
+}
+.item:nth-child(3){
+    display: block;
+}
+.item:nth-child(4){
+    display: block;
+}
+.item:nth-child(5){
+    display: block;
+}
+.item:nth-child(6){
+    display: block;
+}
