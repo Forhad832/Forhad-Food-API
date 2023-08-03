@@ -124,3 +124,17 @@ input[type="text"]:focus{
 .item:nth-child(6){
     display: block;
 }
+
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.custom-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    
+}
