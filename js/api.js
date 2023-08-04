@@ -2,7 +2,9 @@ const loadMeals = (searText)=>{
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searText}`;
 
     fetch(url).then(res=> res.json())
-    .then(data=> displayMeals(data.meals))
+    .then(data=> displayMeals(data.meals));
+    document.getElementById('spinner').style.display = 'block';
+   
 }
 
 const displayMeals = meals =>{
@@ -31,6 +33,8 @@ const displayMeals = meals =>{
         </div>
         `;
         foodContainer.appendChild(newDiv);
+    document.getElementById('spinner').style.display = 'block';
+
     })
 }
 
@@ -67,5 +71,5 @@ document.getElementById('showAllBtn').addEventListener('click', function(){
         item[i].style.display = 'block';
         console.log(item[i]);
     }
-   
-})
+
+});

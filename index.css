@@ -8,6 +8,9 @@
     font-weight: bold;
     font-family: 'Poppins',sans-serif;
 }
+.border{
+    border: 2px solid #100F0F !important;
+}
 .nav-brand h3{
     font-weight: bold;
 }
@@ -33,7 +36,7 @@ input:focus{
     line-height: 80px;
     text-align: center;
     color: white;
-    padding-top: 200px;
+    padding-top: 150px;
 }
 .custom-input-filed {
     width: 100%;

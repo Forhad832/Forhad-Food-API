@@ -1,3 +1,14 @@
+<?php
+include './db_connect/db.php';
+
+ session_start();
+ $email = '';
+ if($_SESSION['email'] == true){
+    $email = $_SESSION['email'];
+ }else{
+    header("location:login.php");
+ }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +27,21 @@
                 <div class="nav-brand">
                     <h3>ForhadFood</h3>
                 </div>
-                <div>
+                <div class="d-flex">
+                    <?php
+                    $select = "SELECT * FROM users";
+                    $ex = mysqli_query($con,$select);
+                     
+                    while($row = mysqli_fetch_array($ex)){ ?>
+                    <div>
+                    <h4><?php echo $row['name'] ?></h4>
+                    <p><small><?php echo $row['email']?></small></p> 
+                    </div>
+
+                    <?php }
+                    
+                ?>
+                   
                     <img class="custom-img" src="./images/forhad.jpg" alt="">
                 </div>
             </nav>
@@ -40,6 +65,16 @@
         <!-- hero section edns here -->
     </header>
 
+
+    <section class="d-none" id="spinner">
+        <div class="container">
+            <div class="row">
+                <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </section>
 <!-- main food section start here -->
 <!-- main food section start here -->
     <section class="foods-section">
@@ -97,6 +132,9 @@
                 <p><span>There are many variations of passages of available, but the majority have suffered</span></p>
                 <div class="d-flex">
                     <input type="text" class="form-control border" placeholder="Email Address"> <button class="custom-btn">Subscribe</button>
+                </div>
+                <div>
+                    <a href="logout.php"><button class="btn btn-warning">Logout</button></a>
                 </div>
             </div>
         </div>
